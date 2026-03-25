@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --color-gold: #D4AF37;
+  --color-deep-sea: #0A192F;
+}
+
+@layer base {
+  body {
+    @apply bg-[#050505] text-[#E4E3E0] font-sans;
+  }
+}
+
+.pirate-gradient {
+  background: radial-gradient(circle at 50% 30%, #1a1a1a 0%, transparent 70%),
+              radial-gradient(circle at 10% 80%, #1c2a3a 0%, transparent 50%);
+}
+
+.gold-text {
+  @apply text-[#D4AF37];
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl;
+}
+
